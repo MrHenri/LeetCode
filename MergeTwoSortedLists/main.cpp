@@ -8,19 +8,6 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-ListNode* mergeTwoLists(ListNode* list1, ListNode* list2);
-
-int main(){
-    ListNode *first = new ListNode(1, new ListNode(2, new ListNode(4)));
-    ListNode *second = new ListNode(1, new ListNode(3, new ListNode(4)));
-
-    ListNode *result = mergeTwoLists(first, second);
-    while(result != nullptr){
-        std::cout << result->val << std::endl;
-        result = result->next;
-    }
-}
-
 ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
     ListNode *result = new ListNode();
     ListNode *next = result;
@@ -44,3 +31,15 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
     }
     return result->next;
 }
+
+int main(){
+    ListNode *first = new ListNode(1, new ListNode(2, new ListNode(4)));
+    ListNode *second = new ListNode(1, new ListNode(3, new ListNode(4)));
+
+    ListNode *result = mergeTwoLists(first, second);
+    while(result != nullptr){
+        std::cout << result->val << std::endl;
+        result = result->next;
+    }
+}
+

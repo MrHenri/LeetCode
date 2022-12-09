@@ -1,13 +1,6 @@
 #include <iostream>
 #include <stack>
 
-bool isValid(std::string s);
-
-int main(){
-    std::cout << isValid("(()[]");
-    return 0;
-}
-
 bool isValid(std::string s) {
     std::stack<char> result;
     for(int i = 0; i < s.size(); i++){
@@ -24,3 +17,9 @@ bool isValid(std::string s) {
 
     return result.empty();
 }
+
+int main(){
+    std::cout << isValid("(()[]");
+    return 0;
+}
+

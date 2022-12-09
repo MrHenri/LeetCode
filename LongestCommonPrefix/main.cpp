@@ -2,13 +2,6 @@ using namespace std;
 #include <vector>
 #include <iostream>
 #include <string>
-string longestCommonPrefix(vector<string>& strs);
-
-int main () {
-    vector<string> strs = { "flower", "flow", "flew"};
-    cout << longestCommonPrefix(strs);
-    return 0;
-}
 
 string longestCommonPrefix(vector<string>& strs) {
     string str = strs.front(), prefix = "";
@@ -31,3 +24,10 @@ string longestCommonPrefix(vector<string>& strs) {
     }
     return prefix;
 }
+
+int main () {
+    vector<string> strs = { "flower", "flow", "flew"};
+    cout << longestCommonPrefix(strs);
+    return 0;
+}
+
