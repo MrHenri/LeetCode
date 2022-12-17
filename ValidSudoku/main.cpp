@@ -26,49 +26,6 @@ bool isValidSudoku(std::vector<std::vector<char>>& board) {
         }
     }
     return true;
-
-    // std::set<char> line, column;
-    // int i = 0, j = 0, c = 0, l = 0, q = 0, mod = 1;
-    // while(c < 9 && l < 9){
-
-
-    //     if(line.count(board[i][c])){
-    //         return false;
-    //     }
-
-    //     if(board[i][c] != '.' && board[i][c] != ','){
-    //         line.insert(board[i][c]);
-    //     }
-
-    //     if(column.count(board[l][j])){
-    //         return false;
-    //     }
-
-    //     if(hash[q].count(board[l][j])){
-    //         return false;
-    //     }
-
-
-    //     if(board[l][j] != '.' && board[l][j] != ','){
-    //         column.insert(board[l][j]);
-    //         hash[q].insert(board[l][j]);
-    //     }
-
-
-    //     i++;
-    //     j++;
-
-    //     if(i>=9){
-    //         c++;
-    //         i=0;
-    //         line.clear();
-
-    //         l++;
-    //         j=0;
-    //         column.clear();
-    //     }
-    // }
-    // return true;
 }
 
 int main(){
